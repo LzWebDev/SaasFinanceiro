@@ -9,8 +9,8 @@ const sequelize = new Sequelize(
     {
       host: process.env.DB_HOST,
       dialect: 'postgres',
-      logging: false, // define como true se quiser ver os logs SQL no terminal
+      logging: true, // define como true se quiser ver os logs SQL no terminal
     }
   );
-  
+
 export default db;
